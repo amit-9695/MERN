@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(241, 212, 216);
+      }
+      .child1 {
+        background-color: rgb(243, 111, 10);
+        padding: 30px;
+        color: rgb(255, 255, 255);
+      }
+      .child2 {
+        background-color: crimson;
+        padding: 30px;
+        color: white;
+      }
+      .child3 {
+        background-color: rgb(215, 150, 19);
+        padding: 30px;
+        color: white;
+      }
+      .child4 {
+        background-color: rgb(254, 246, 0);
+        padding: 30px;
+        color: white;
+      }
+      .child5 {
+        background-color: rgb(39, 48, 39);
+        padding: 30px;
+        color: white;
+      }
+      .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+      }
+      .container4 {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Creates 2 equal columns */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+      <div class="container2">
+        <div class="container3">
+          <div class="child1">
+            <h2>Search</h2>
+            <h3>SEO/Google Ads</h3>
+            <h3>Youtube Ads</h3>
+            <h3>Google Shopping</h3>
+          </div>
+          <div class="child2">
+            <h2>CRO</h2>
+            <h3>Landing Page</h3>
+            <h3>Conversion Rate</h3>
+            <h3>Call to Action</h3>
+          </div>
+          <div class="child3">
+            <h2>Social Media</h2>
+            <h3>Facebook Ads</h3>
+            <h3>Instagram Ads</h3>
+            <h3>TikTok Ads</h3>
+          </div>
+        </div>
+        <div class="container4">
+          <div class="child4">
+            <h2>Email Marketing</h2>
+            <h3>Newsletter Campaigns</h3>
+            <h3>Automated Emails</h3>
+            <h3>Customer Retention</h3>
+          </div>
+          <div class="child5">
+            <h2>Analytics</h2>
+            <h3>Data Analysis</h3>
+            <h3>Performance Metrics</h3>
+            <h3>Reporting</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

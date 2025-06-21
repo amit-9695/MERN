@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using FlexBox </title>
+
+    <style>
+        .child {
+            background-color: crimson;
+            padding: 30px;
+            /* margin: 10px; */
+            border: 2px solid blue;
+            color: white;
+        }
+
+        .parent {
+            display: flex;
+            flex-direction: row; /* Change to column for vertical layout */
+            justify-content: center; /* Change to space-between, space-around, or space-evenly for different spacing */
+            justify-content: space-evenly; /* Space between items */
+            /* align-items: flex-start; Change to flex-start or flex-end for different vertical alignment */
+            /* height: 100vh; Full viewport height */
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- div.parent>div.child*3>h2{Child $} -->
+    <div class="parent">
+        <div class="child">
+            <h2>Child 1</h2>
+        </div>
+        <div class="child">
+            <h2>Child 2</h2>
+        </div>
+        <div class="child">
+            <h2>Child 3</h2>
+        </div>
+    </div>
+</body>
+</html>

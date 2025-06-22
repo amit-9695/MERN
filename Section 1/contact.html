@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        .card{
+            border: 2px solid rgb(122, 2, 2);
+            border-radius: 20px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            width: 80%;
+            margin: auto;
+            margin-top: 10vh;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.1);
+            height: 60vh;
+        }
+        .contactInfo{
+            padding: 20px;
+            background-color: rgb(255, 235, 235);
+
+        }
+        .contactForm{
+            padding: 20px;
+            background-color: rgb(224, 223, 223);
+        }
+        .social-links{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .social-links p{
+            margin: 0;
+        }
+        .text-input{
+            width: 100%;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border: 1px solid #030303;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .send{
+            background-color: rgb(122, 2, 2);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            margin-left: auto;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <div class="card">
+        <div class="contactInfo">
+            <h1>Contact Us</h1>
+            <p>For any inquiries, please reach out to us at:</p>
+            <p>Address: 1234 Street Name, City, State, Zip</p>
+            <h2>Follow us on social media:</h2>
+            <div class="social-links">
+                <p>Facebook: </p>
+                <p>Twitter: </p>
+                <p>Instagram:</p>
+                <p>LinkedIn:</p>
+                <p>Email:</p>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form>
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name" required class="text-input">  
+                <label for="email">Email:</label>   
+                <input type="email" id="email" name="_replyto" required class="text-input">    
+                <label for="message">Message:</label>   
+                <textarea id="message" name="message" rows="4" required class="text-input"></textarea>
+                <button type="submit" class="send">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

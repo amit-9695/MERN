@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen p-8">
+    <div class="border border-gray-200 w-1/5 shadow-xl rounded-xl">
+        <h2 class="text-2xl text-center font-bold my-4">Login Form</h2>
+         <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button>Submit</button>
+            <p>Don't have an account? <a href="#">Register here</a></p>
+            <p><a href="#">Forgot Password?</a></p>
+        </form>
+    </div>
+  </body>
+</html>

@@ -5,20 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="flex justify-center items-center h-screen p-8">
-    <div class="border border-gray-200 w-1/5 shadow-xl rounded-xl">
-        <h2 class="text-2xl text-center font-bold my-4">Login Form</h2>
-         <form>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+  <body
+    class="flex justify-center items-center h-screen bg-[url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80')] bg-cover"
+  >
+    <div class="border border-gray-200 w-1/4 shadow-xl rounded-xl p-8 bg-white">
+      <h2 class="text-2xl text-center font-bold my-4">Login Form</h2>
+      <form>
+        <label for="email" class="font-bold">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="border w-full px-2 py-1 rounded-md mb-2"
+        />
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button>Submit</button>
-            <p>Don't have an account? <a href="#">Register here</a></p>
-            <p><a href="#">Forgot Password?</a></p>
-        </form>
+        <label for="password" class="font-bold">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          class="border w-full px-2 py-1 rounded-md mb-2"
+        />
+        <p>
+          <a href="#" class="text-violet-700 block text-right mt-2"
+            >Forgot Password?</a
+          >
+        </p>
+        <button
+          class="rounded-md bg-violet-700 w-full text-white p-1 mt-4 mb-2"
+        >
+          Submit
+        </button>
+        <p class="block text-center mt-2 font-bold">
+          Don't have an account?
+          <a href="#" class="text-violet-700">Register here</a>
+        </p>
+      </form>
     </div>
   </body>
 </html>
